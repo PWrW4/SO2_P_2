@@ -67,7 +67,7 @@ void philosopher::eat() {
     std::lock_guard<std::mutex> left_lock(left_fork.mtx, std::adopt_lock);
     std::lock_guard<std::mutex> right_lock(right_fork.mtx, std::adopt_lock);
     state = 1;
-    int part = std::uniform_int_distribution<int>(15, 25)(rng);
+    int part = std::uniform_int_distribution<int>(25, 50)(rng);
     for (auto i = 1; i <= part; i++) {
         if (exit) {
             return;

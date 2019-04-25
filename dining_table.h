@@ -5,8 +5,10 @@
 #ifndef SO2_P_2_DINING_TABLE_H
 #define SO2_P_2_DINING_TABLE_H
 
+#include "philosopher.h"
 #include <atomic>
 #include "fork.h"
+#include <queue>
 
 class dining_table {
 public:
