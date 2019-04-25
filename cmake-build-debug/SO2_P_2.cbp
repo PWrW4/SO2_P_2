@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/h/Workspace/Study/gcc-make/SO2_P_2/dining_philosophers.h">
+		<Unit filename="/cygdrive/h/Workspace/Study/gcc-make/SO2_P_2/dining_table.h">
 			<Option target="SO2_P_2"/>
 		</Unit>
 		<Unit filename="/cygdrive/h/Workspace/Study/gcc-make/SO2_P_2/fork.h">

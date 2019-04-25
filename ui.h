@@ -7,6 +7,8 @@
 
 #define PBAR "##################################################"
 #define LENGTH 50
+#define THREAD_COUNT 10
+
 
 #include <cmath>
 #include <iostream>
@@ -16,7 +18,7 @@
 #include <vector>
 
 #include "philosopher.h"
-#include "dining_philosophers.h"
+#include "dining_table.h"
 #include "fork.h"
 
 class ui {
@@ -28,7 +30,7 @@ private:
     const int max_len = 46;
     std::mutex m;
     std::map<int, const char *> states = {
-        std::pair<int, const char *>(-1, "waiting for table"),
+        std::pair<int, const char *>(-1, "waiting for dining_table"),
         std::pair<int, const char *>(0, "thinking"),
         std::pair<int, const char *>(1, "eating"),
         std::pair<int, const char *>(2, "waiting for forks")};

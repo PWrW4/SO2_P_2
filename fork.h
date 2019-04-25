@@ -5,9 +5,11 @@
 #ifndef SO2_P_2_FORK_H
 #define SO2_P_2_FORK_H
 #include <mutex>
+#include "ui.h"
 
 class fork {
 public:
+    int id;
     std::mutex mtx;
 };
 
